@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://www.shareicon.net/data/2016/03/27/465737_check_258x258.png" type="png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <div>
+            <input type="checkbox" class="checkbox-mode" id="trade-mode" />
+            <label class="label-mode" for="trade-mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="select-mode"></div>
+            </label>
+        </div>
+    </div>
+    <div id="firstElement" class="lista">
+        <h1>Lista de tarefas</h1>
+        <input type="text" id="myInput" class="caixa-tarefa" placeholder="Nova tarefa...">
+        <button class="botao-tarefa" onclick="newElement()">Adicionar</button>
+        <ul id="myUL"></ul>
+    </div>
+    <footer class="footer">
+        <a class="github" href="https://github.com/LucasRiffel">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

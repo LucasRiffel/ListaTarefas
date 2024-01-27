@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c7c7c7;
+    color: #000000;
+    transition: background 0.5s linear;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    margin-top: 15vh;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #030303c7;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    box-shadow: 4px 18px 20px 6px rgba(0, 0, 0, 0.42);
+    border-radius: 0 0 15px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#firstElement {
+    margin-top: 5px;
+}
+
+.lista {
+    border: 1px solid #ffffff;
+    background-color: rgba(100, 100, 100, 0.5);
+    background: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    width: 40%;
+    padding-bottom: 10px;
+}
+
+
+.caixa-tarefa {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    margin: 5px;
+    max-width: 150px;
+}
+
+.caixa-tarefa :hover {
+    border: 1px solid #000000;
+}
+
+.botao-tarefa {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #919191;
+    color: #000000;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icone-edicao {
+    background: none;
+    border: none;
+    color: #f3df2e;
+    padding: 5px;
+}
+
+.icone-excluir {
+    background: none;
+    border: none;
+    color: #d13a3a;
+    padding: 5px;
+}
+
+.icone-excluir:hover,
+.icone-edicao:hover {
+    background: none;
+    border: none;
+}
+
+.contador-tarefa {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+li button {
+    margin-top: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: none;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+li button:hover {
+    background-color: #ddd;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: #a7a7a71e;
+    color: #000000;
+}
+
+.github {
+    color: black;
+    font-size: 40px;
+}
+
+
+body.dark {
+    background: #292c35;
+    color: #b9b9b9;
+}
+
+.checkbox-mode {
+    opacity: 0;
+    position: relative;
+}
+
+
+.label-mode {
+    background-color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+
+}
+
+.checkbox-mode:checked+.label-mode .select-mode {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #ffa600;
+}
+
+.fa-sun {
+    color: #ffa600;
+}
+
+.label-mode .select-mode {
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.4s linear;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #5c5c5c;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #868686;
+}
+
+
+::-webkit-scrollbar-track-piece:hover {
+    background-color: #000000;
+}
